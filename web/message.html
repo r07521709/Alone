@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Alone</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1 class="brand"><a href="index.html">AL<span>O</span>NE</a></h1>
+          <ul>
+            <li><a href="#">message</a></li>
+            <li><a href="/launch.html" target="_blank">launch</a></li>
+            <li><a href="/account.html">account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr style="color:white;margin-top:0px;">
+    <div style="font-size:3rem;color:white;">
+      <p align="center">Message</p>
+    </div>
+    <br>
+    <div class="communicate-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;">
+      <p style="margin-bottom:5px;">Communicate Address</p>
+      <hr style="color:white;margin-top:0px;">
+      <div class="textbox">
+          <input style="color:gray;" id="communicate-address" type="text" placeholder="address" name="" value="">
+      </div>
+    </div>
+    <br><br>
+    <div class="message-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;">
+      <p style="margin-bottom:5px;">Send</p>
+      <hr style="color:white;margin-top:0px;">
+      <div class="textbox">
+        <input style="color:gray;" id="communicate-publickey" type="text" placeholder="publick key" name="" value="">
+        <input style="color:gray;" id="send-message" type="text" placeholder="message" name="" value="">
+        <button style="background:none;border:none;float:right;" id="btn-message-send" type="button" data-id="0"><span style="color:white;padding:5px;">Send</span></button>
+      </div>
+    </div>
+    <br><br>
+    <div class="receive-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;word-wrap:break-word;">
+      <p style="margin-bottom:5px;">Receive</p>
+      <hr style="color:white;margin-top:0px;">
+      <input style="color:gray;" id="communicate-privatekey" type="text" placeholder="private key" name="" value="">
+      <button style="background:none;border:none;float:right;" id="btn-message-receive" type="button" data-id="0"><span style="color:white;padding:5px;">Recieve</span></button><br>
+      <div style="margin-top:20px;">
+        <span style="font-size:1.75rem;" id="receive-message">No message.</span><br>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/messageCompiled.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Alone</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1 class="brand"><a href="index.html">AL<span>O</span>NE</a></h1>
+          <ul>
+            <li><a href="/message.html">message</a></li>
+            <li><a href="/launch.html" target="_blank">launch</a></li>
+            <li><a href="#" onclick="App.accountContent()">account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr style="color:white;margin-top:0px;">
+    <div style="font-size:3rem;color:white;">
+      <p align="center">Account</p>
+    </div>
+    <br>
+    <div class="client-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;word-wrap:break-word;">
+      <p style="margin-bottom:5px;">Your Client</p>
+      <hr style="color:white;margin-top:0px;">
+      <span id="account-buyer" style="font-size:1.75rem;">no client</span><br>
+      <span id="account-buyer-publickey" style="font-size:1.05rem;">no public key</span>
+    </div>
+    <br><br>
+    <div class="success-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;">
+      <p style="margin-bottom:5px;">Confirm Service</p>
+      <hr style="color:white;margin-top:0px;">
+      <div class="textbox">
+          <input style="color:gray" id="confirm-address" type="text" placeholder="account" name="" value="">
+          <button style="background:none;border:none;float:right;" id="btn-account-confirm" type="button" data-id="0"><span style="color:white;padding:5px;">Confirm</span></button>
+          <button style="background:none;border:none;float:right;" id="btn-account-reject" type="button" data-id="0"><span style="color:white;padding:5px;">Reject</span></button>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="evaluate-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;">
+      <p style="margin-bottom:5px;">Evaluate</p>
+      <hr style="color:white;margin-top:0px;">
+      <div class="textbox">
+        <input style="color:gray" id="evaluate-address" type="text" placeholder="account" name="" value="">
+        <input style="color:gray" id="evaluate-star" type="text" placeholder="star (1~5)" name="" value="">
+        <button style="background:none;border:none;float:right;" id="btn-account-evaluate" type="button" data-id="0"><span style="color:white;padding:5px;">Confirm</span></button>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="showEvaluation-console" style="font-size:2rem;color:white;margin-left:400px;margin-right:400px;">
+      <p style="margin-bottom:5px;">Get Evaluation</p>
+      <hr style="color:white;margin-top:0px;">
+      <div class="textbox">
+        <input style="color:gray" id="show-evaluate-address" type="text" placeholder="account" name="" value="">
+        <button style="background:none;border:none;float:right;" id="btn-account-lookup" type="button" data-id="0"><span style="color:white;padding:5px;">Look Up</span></button>
+        <p id="showEvaluation-star" style="margin-top:5px;">Star: </p>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/account.js"></script>
+  </body>
+</html>
