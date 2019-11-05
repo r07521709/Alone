@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "eth-crypto": "^1.3.4",
-    "mongoose": "^5.5.10"
+    "mongoose": "^5.7.5"
   }
 }
